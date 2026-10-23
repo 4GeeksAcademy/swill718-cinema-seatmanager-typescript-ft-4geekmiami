@@ -1,4 +1,30 @@
-# Hello World with Typescript
+# Frame Cinema Seat Manager
+
+An 8-row, 10-seat cinema reservation prototype built with TypeScript, arrays,
+and plain functions.
+
+## Run the reservation interface
+
+```bash
+npm install
+npm run start
+```
+
+Open the local URL printed by Vite. Select a seat and confirm with **Reserve
+seat**, or use **Find two together** to select the first available pair in the
+same row, then confirm. Pair search does not reserve seats automatically.
+Reserved seats cannot be selected again. Counts update after each reservation.
+
+Rows are numbered 1-8 and seats 1-10. Reservations exist only in memory and reset
+when the page is refreshed. There is no backend or persistent storage.
+
+`npm run console` prints demonstrations of empty, partially reserved,
+scattered-single, and full rooms. Console output uses `L` for available and `X`
+for reserved. The terminal demonstration is not an interactive menu.
+
+Run `npm run typecheck` to validate TypeScript.
+
+## Starter Reference
 
 <!-- hide -->
 > By [@ehiber](https://github.com/ehiber) and contributors at [4Geeks Academy](https://4geeksacademy.com/)
@@ -66,7 +92,8 @@ It depends on the language:
 
 You can add more files as needed, just make sure to import them from `main.ts`.
 
-Note: if you can see the "Hello Rigo" card and the message "If you can see this, Tailwind is working.", Tailwind is configured correctly.
+The shared reservation functions live in `./src/seating.ts`; browser controls
+and the console demonstration live in `./src/main.ts`.
 
 ## Troubleshooting
 
