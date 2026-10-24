@@ -20,7 +20,8 @@ when the page is refreshed. There is no backend or persistent storage.
 
 `npm run console` prints demonstrations of empty, partially reserved,
 scattered-single, and full rooms. Console output uses `L` for available and `X`
-for reserved. The terminal demonstration is not an interactive menu.
+for reserved. Run `npm run console:interactive` for an interactive terminal menu
+to view the seating plan, reserve seats, find adjacent seats, and check availability.
 
 Run `npm run typecheck` to validate TypeScript.
 
